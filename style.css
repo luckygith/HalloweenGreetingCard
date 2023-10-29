@@ -1,69 +1,99 @@
 .page {
-  background-color: blue;
+  background-color: #000000;
 }
 
-.content {
-  min-height: 720px;
-  max-height: 1000px;
-  height: 100vh;
-  background-color: rgb(8, 8, 8);
+.page_content {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(./images/skeleton-5585324.svg);
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  padding: 0;
+  margin: 0;
 }
 
-.title {
-  color: rgb(63, 63, 94);
-  max-width: 729px;
-  font-size: 100px;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: end;
-  align-self: center;
+.page_title {
+  position: relative;
+  font-family: "Caveat", cursive;
+  color: #4e00f6;
+  max-width: 300px;
+  max-height: 1000px;
+  font-size: 50px;
+  z-index: 999;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 900px;
+}
+
+.content_images {
 }
 
 .content_image-1 {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  top: 110px;
-  left: 220px;
+  width: 200px;
+  height: 200px;
+  top: 30px;
+  left: 20px;
+  transform: rotate(-10deg);
 }
 
 .content_image-2 {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  top: 390px;
-  left: 90px;
-  transform: rotate(5deg);
+  width: 350px;
+  height: 350px;
+  bottom: 400px;
+  left: 175px;
+  transform: rotate(8deg);
 }
 .content_image-3 {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  bottom: 40px;
-  left: 400px;
+  width: 300px;
+  height: 300px;
+  top: 390px;
+  left: 50px;
+  transform: rotate(5deg);
 }
 .content_image-4 {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  top: 120px;
-  right: 230px;
-  transform: rotate(-5deg);
+  width: 250px;
+  height: 250px;
+  bottom: 700px;
+  right: 100px;
+  transform: rotate(-10deg);
 }
 .content_image-5 {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  top: 180px;
-  right: 550px;
+  width: 330px;
+  height: 330px;
+  top: 200px;
+  right: 200px;
+  transform: rotate(-5deg);
 }
 .content_image-6 {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  top: 200px;
-  left: 550px;
+  width: 275px;
+  height: 275px;
+  bottom: 100px;
+  right: 100px;
+  transform: rotate(10deg);
+}
+
+.content_image-7 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  bottom: 30px;
+  left: 200px;
 }
 
 .content_image-1,
@@ -71,13 +101,11 @@
 .content_image-3,
 .content_image-4,
 .content_image-5,
-.content_image-6 {
+.content_image-6,
+.content_image-7 {
   position: absolute;
-  width: 130px;
-  height: 130px;
-  display: block; /* Set to 'block' initially */
-  opacity: 0; /* Initially, set opacity to 0 */
-  transition: opacity 0.3s ease; /* Add a transition for smoother effect */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .content_image-1:hover {
@@ -97,4 +125,15 @@
 }
 .content_image-6:hover {
   opacity: 1;
+}
+.content_image-7:hover {
+  opacity: 1;
+}
+
+.footer__copyright {
+  position: relative;
+  color: #f07a0b;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
