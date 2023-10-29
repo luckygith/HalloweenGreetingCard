@@ -20,15 +20,12 @@
   align-self: center;
 }
 
-.content_images {
-}
-
 .content_image-1 {
   position: absolute;
   width: 130px;
   height: 130px;
-  top: 150px;
-  left: 50px;
+  top: 110px;
+  left: 220px;
 }
 
 .content_image-2 {
@@ -37,6 +34,7 @@
   height: 130px;
   top: 390px;
   left: 90px;
+  transform: rotate(5deg);
 }
 .content_image-3 {
   position: absolute;
@@ -51,6 +49,7 @@
   height: 130px;
   top: 120px;
   right: 230px;
+  transform: rotate(-5deg);
 }
 .content_image-5 {
   position: absolute;
@@ -63,4 +62,39 @@
   position: absolute;
   width: 130px;
   height: 130px;
+  top: 200px;
+  left: 550px;
+}
+
+.content_image-1,
+.content_image-2,
+.content_image-3,
+.content_image-4,
+.content_image-5,
+.content_image-6 {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  display: block; /* Set to 'block' initially */
+  opacity: 0; /* Initially, set opacity to 0 */
+  transition: opacity 0.3s ease; /* Add a transition for smoother effect */
+}
+
+.content_image-1:hover {
+  opacity: 1;
+}
+.content_image-2:hover {
+  opacity: 1;
+}
+.content_image-3:hover {
+  opacity: 1;
+}
+.content_image-4:hover {
+  opacity: 1;
+}
+.content_image-5:hover {
+  opacity: 1;
+}
+.content_image-6:hover {
+  opacity: 1;
 }
