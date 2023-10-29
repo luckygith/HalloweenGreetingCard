@@ -1,0 +1,7 @@
+.footer__copyright {
+  position: relative;
+  color: #f07a0b;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
